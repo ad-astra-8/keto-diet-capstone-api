@@ -4,6 +4,8 @@ const morgan = require('morgan')
 const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
+const authRouter = require('./auth/auth-router')
+const usersRouter = require('./users/users-router')
 
 // const validateBearerToken = require('./validate-bearer-token');
 
@@ -19,7 +21,6 @@ const morganOption = (NODE_ENV === 'production')
 app.use(morgan(morganOption))
 app.use(helmet())
 app.use(cors())
-
 // app.use(validateBearerToken);
 
 app.get('/', (req, res) => {
@@ -28,6 +29,8 @@ app.get('/', (req, res) => {
 
 app.use('/api/notes', noteRouter);
 app.use('/api/folders', folderRouter);
+app.use('/api/auth', authRouter)
+app.use('/api/users', usersRouter)
 
 app.use(function errorHandler(error, req, res, next) {
     let response

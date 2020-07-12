@@ -65,8 +65,8 @@ describe(`GET /api/notes`, () => {
 })
 
 describe(`POST /api/notes`, () => {
-		const testFolder = makeFolderArray();
-		const testNote = makeNoteArray();
+		// const testFolder = makeFolderArray();
+		// const testNote = makeNoteArray();
 
 		// DISCUSS WITH MENTOR
 		// TESTS PASS WHEN I COMMENT THIS OUT
