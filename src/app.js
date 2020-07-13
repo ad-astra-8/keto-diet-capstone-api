@@ -20,11 +20,8 @@ const morganOption = (NODE_ENV === 'production')
     : 'common';
 
 app.use(morgan(morganOption))
+app.use(cors())
 app.use(helmet())
-app.use(cors({
-    origin: CLIENT_ORIGIN
-})
-)
 // app.use(validateBearerToken);
 
 app.get('/', (req, res) => {
