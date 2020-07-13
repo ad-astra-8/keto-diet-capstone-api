@@ -39,7 +39,7 @@ authRouter
                 error: 'Incorrect email or password',
               })
               
-            const sub = dbUser.user_email
+            const sub = dbUser.email
             const payload = {
               user_id: dbUser.id
             }
