@@ -12,6 +12,8 @@ const usersRouter = require('./users/users-router')
 
 const noteRouter = require('./note/note-router');
 const folderRouter = require('./folder/folder-router');
+const recipeRouter = require('./recipe/recipe-router');
+
 
 const app = express()
 
@@ -30,6 +32,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/notes', noteRouter);
 app.use('/api/folders', folderRouter);
+app.use('/api/recipes', recipeRouter)
 app.use('/api/auth', authRouter)
 app.use('/api/users', usersRouter)
 
