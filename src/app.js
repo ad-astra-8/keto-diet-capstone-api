@@ -26,7 +26,7 @@ app.use(cors())
 app.use(helmet())
 // app.use(validateBearerToken);
 
-app.get('/', (req, res) => {
+app.get('/', (req, res,) => {
     res.send('Hello, world!')
 })
 
@@ -47,4 +47,4 @@ app.use(function errorHandler(error, req, res, next) {
     res.status(500).json(response)
 })
 
-module.exports = app
+module.exports = app;

@@ -8,10 +8,3 @@ describe('App', () => {
   })
 })
 
-// describe(`App Server endpoints - Unauthorized requests`, () => {
-// 	it(`responds with 401 Unauthorized for GET /`, () => {
-// 		return supertest(app)
-// 			.get('/')
-// 			.expect(401, { error: 'Unauthorized request' });
-// 	});
-// });
