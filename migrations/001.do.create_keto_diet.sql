@@ -22,5 +22,5 @@ CREATE TABLE recipes (
         REFERENCES users(id) ON DELETE CASCADE NOT NULL,
     title VARCHAR (255) NOT NULL,
     image VARCHAR (255) NOT NULL,
-    source VARCHAR (255) NOT NULL
+    source VARCHAR (255) NOT NULL,
 );

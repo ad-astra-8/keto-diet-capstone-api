@@ -92,3 +92,29 @@
 {"message":"Note with id 30 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-14-2020 15:47:21","ms":"+2m"}
 {"message":"id_folder is required","request":"/api/notes","method":"POST","ip":"::1","level":"error","timestamp":"07-14-2020 22:34:29","ms":"+0ms"}
 {"message":"Note with id 31 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-14-2020 22:34:38","ms":"+8s"}
+{"message":"Recipe with id 28 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-15-2020 19:08:42","ms":"+0ms"}
+{"message":"Recipe with id 29 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-15-2020 19:10:44","ms":"+2m"}
+{"message":"Recipe with id 30 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-15-2020 19:11:01","ms":"+17s"}
+{"message":"Recipe with id 31 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 09:19:13","ms":"+0ms"}
+{"message":"Recipe with id 37 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 09:27:35","ms":"+8m"}
+{"message":"Recipe with id 38 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:29:02","ms":"+1h"}
+{"message":"Recipe with id 39 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:29:15","ms":"+13s"}
+{"message":"Recipe with id 40 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:29:53","ms":"+38s"}
+{"message":"Recipe with id 41 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:47:42","ms":"+18m"}
+{"message":"Recipe with id 42 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:50:54","ms":"+3m"}
+{"message":"Recipe with id 43 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:51:27","ms":"+33s"}
+{"message":"Recipe with id 44 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:52:25","ms":"+58s"}
+{"message":"Recipe with id 45 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:52:54","ms":"+29s"}
+{"message":"Recipe with id 46 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:54:23","ms":"+1m"}
+{"message":"Recipe with id 47 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:54:59","ms":"+36s"}
+{"message":"Note with id 32 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:56:51","ms":"+2m"}
+{"message":"Invalid content 'test' supplied","level":"error","timestamp":"07-16-2020 10:57:43","ms":"+51s"}
+{"message":"POST Validation Error","request":"/api/notes","method":"POST","ip":"::1","level":"error","timestamp":"07-16-2020 10:57:43","ms":"+9ms"}
+{"message":"Invalid content 'test' supplied","level":"error","timestamp":"07-16-2020 10:58:05","ms":"+22s"}
+{"message":"POST Validation Error","request":"/api/notes","method":"POST","ip":"::1","level":"error","timestamp":"07-16-2020 10:58:05","ms":"+8ms"}
+{"message":"Invalid content 'test' supplied","level":"error","timestamp":"07-16-2020 10:58:22","ms":"+16s"}
+{"message":"POST Validation Error","request":"/api/notes","method":"POST","ip":"::1","level":"error","timestamp":"07-16-2020 10:58:22","ms":"+6ms"}
+{"message":"Invalid content 'test' supplied","level":"error","timestamp":"07-16-2020 10:58:33","ms":"+11s"}
+{"message":"POST Validation Error","request":"/api/notes","method":"POST","ip":"::1","level":"error","timestamp":"07-16-2020 10:58:33","ms":"+7ms"}
+{"message":"Note with id 33 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:59:08","ms":"+35s"}
+{"message":"Note with id 34 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:59:39","ms":"+31s"}
