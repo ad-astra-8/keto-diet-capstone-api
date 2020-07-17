@@ -118,3 +118,4 @@
 {"message":"POST Validation Error","request":"/api/notes","method":"POST","ip":"::1","level":"error","timestamp":"07-16-2020 10:58:33","ms":"+7ms"}
 {"message":"Note with id 33 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:59:08","ms":"+35s"}
 {"message":"Note with id 34 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-16-2020 10:59:39","ms":"+31s"}
+{"message":"Recipe with id 48 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-17-2020 15:44:16","ms":"+0ms"}
