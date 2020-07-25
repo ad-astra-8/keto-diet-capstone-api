@@ -121,3 +121,5 @@
 {"message":"Recipe with id 48 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-17-2020 15:44:16","ms":"+0ms"}
 {"message":"Recipe with id 49 created.","request":"/api/recipes","method":"POST","ip":"::1","level":"info","timestamp":"07-19-2020 19:53:48","ms":"+0ms"}
 {"message":"Note with id 35 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-19-2020 19:55:06","ms":"+1m"}
+{"message":"Note with id 36 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-25-2020 18:05:27","ms":"+0ms"}
+{"message":"Note with id 37 created.","request":"/api/notes","method":"POST","ip":"::1","level":"info","timestamp":"07-25-2020 18:37:56","ms":"+32m"}
