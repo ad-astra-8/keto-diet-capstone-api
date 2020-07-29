@@ -2,6 +2,7 @@
 const xss = require('xss')
 const bcrypt = require('bcryptjs')
 
+// methods to store database transactions
 const UsersService = {
     serializeUser(user) {
         // console.log(user)
