@@ -1,3 +1,4 @@
+//loading external resources
 const logger = require('../logger');
 
 const NO_ERRORS = null;

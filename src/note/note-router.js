@@ -1,14 +1,18 @@
+//loading external resources
 const path = require('path');
 const express = require('express');
 const xss = require('xss');
 const logger = require('../logger');
 
+//include service and validator
 const NoteService = require('./note-service');
 const { getNoteValidationError } = require('./note-validator');
 
+//define noteRouter and jsonParser for reuse
 const noteRouter = express.Router();
 const jsonParser = express.json();
 
+//serialization method to display selective data related to notes
 const serializeNote = note => ({
 	id: note.id,
 	name: xss(note.name),
@@ -17,8 +21,10 @@ const serializeNote = note => ({
 	modified: note.modified
 });
 
+//routes
 noteRouter
 	.route('/')
+	//get all notes
 	.get((req, res, next) => {
 		const knexInstance = req.app.get('db');
 		NoteService.getAllNotes(knexInstance)
@@ -27,12 +33,13 @@ noteRouter
 			})
 			.catch(next);
 	})
+	//post new note
 	.post(jsonParser, (req, res, next) => {
 		const { name, id_folder, content } = req.body;
 		const newNote = { name, id_folder, content };
 
 		const knexInstance = req.app.get('db');
-
+//validating the fields we send accross
 		for (const field of ['name', 'id_folder', 'content']) {
 			if (!req.body[field]) {
 				logger.error({
@@ -46,7 +53,7 @@ noteRouter
 				});
 			}
 		}
-
+//validates server where data is sent
 		const error = getNoteValidationError(newNote);
 		if (error) {
 			logger.error({
@@ -57,7 +64,7 @@ noteRouter
 			});
 			return res.status(400).send(error);
 		}
-
+//sending data to service in order to save data in db
 		NoteService.insertNote(knexInstance, newNote)
 			.then(note => {
 				logger.info({
@@ -73,7 +80,7 @@ noteRouter
 			})
 			.catch(next);
 	});
-
+//routes by id
 noteRouter
 	.route('/:id')
 	.all((req, res, next) => {
@@ -97,9 +104,11 @@ noteRouter
 			})
 			.catch(next);
 	})
+	//get notes by id
 	.get((req, res) => {
 		res.json(serializeNote(res.note));
 	})
+	//delete note by id
 	.delete((req, res, next) => {
 		const { id } = req.params;
 		const knexInstance = req.app.get('db');
@@ -118,6 +127,7 @@ noteRouter
 			})
 			.catch(next);
 	})
+	//patch by id
 	.patch(jsonParser, (req, res, next) => {
 		const knexInstance = req.app.get('db');
 		const { id } = req.params;

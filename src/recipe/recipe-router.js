@@ -1,14 +1,18 @@
+//loading external resources
 const path = require('path');
 const express = require('express');
 const xss = require('xss');
 const logger = require('../logger');
 
+//include service and validator
 const RecipeService = require('./recipe-service');
 const { getRecipeValidationError } = require('./recipe-validator');
 
+//define recipeRouter and jsonParser for reuse
 const recipeRouter = express.Router();
 const jsonParser = express.json();
 
+//serialization method to display selective data related to recipes
 const serializeRecipe = recipe => ({
 	id: recipe.id,
 	title: xss(recipe.title),
@@ -17,6 +21,7 @@ const serializeRecipe = recipe => ({
 	user_id: recipe.user_id
 });
 
+//all recipes
 recipeRouter
 	.route('/')
 	.get((req, res, next) => {
@@ -27,6 +32,7 @@ recipeRouter
 			})
 			.catch(next);
 	})
+	 //post recipes
 	.post(jsonParser, (req, res, next) => {
 		const { user_id, title, source, image } = req.body;
 		const newRecipe = { user_id, title, source, image  };
@@ -60,6 +66,7 @@ recipeRouter
 			.catch(next);
 	});
 
+//recipes by id
 recipeRouter
 	.route('/:id')
 	.all((req, res, next) => {

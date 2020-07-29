@@ -1,3 +1,4 @@
+//loading external resources
 const app = require('../src/app')
 
 describe('App', () => {
