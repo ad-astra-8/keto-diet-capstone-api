@@ -1,4 +1,4 @@
-const knex = require('knex')
+const knex = require('knex');
 const app = require('../src/app');
 const { makeFolderArray } = require('./folder-fixtures');
 

@@ -1,13 +1,13 @@
 //loading external resources
-const express = require('express')
-const path = require('path')
+const express = require('express');
+const path = require('path');
 
 //include service
-const UsersService = require('./users-service')
+const UsersService = require('./users-service');
 
 //define usersRouter and jsonParser for reuse
-const usersRouter = express.Router()
-const jsonBodyParser = express.json()
+const usersRouter = express.Router();
+const jsonBodyParser = express.json();
 
 
 // All users
@@ -105,4 +105,4 @@ usersRouter
             .catch(next)
     })
 
-module.exports = usersRouter
+module.exports = usersRouter;

@@ -1,8 +1,8 @@
-const express = require('express')
-const AuthService = require('./auth-service')
+const express = require('express');
+const AuthService = require('./auth-service');
 
-const authRouter = express.Router()
-const jsonBodyParser = express.json()
+const authRouter = express.Router();
+const jsonBodyParser = express.json();
 //something here?..
 authRouter
   .post('/login', jsonBodyParser, (req, res, next) => {
@@ -55,4 +55,4 @@ authRouter
       .catch(next)
   })
 
-module.exports = authRouter
+module.exports = authRouter;

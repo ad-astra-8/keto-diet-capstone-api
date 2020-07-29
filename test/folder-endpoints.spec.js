@@ -1,6 +1,6 @@
-const knex = require('knex')
+const knex = require('knex');
 const app = require('../src/app');
-const { makeFoldersArray } = require('./folders.fixtures')
+const { makeFoldersArray } = require('./folders.fixtures');
 
 describe('Keto-diet-capstone API - folders', function () {
 

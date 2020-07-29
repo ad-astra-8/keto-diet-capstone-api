@@ -1,6 +1,6 @@
 //loading external resources
-const xss = require('xss')
-const bcrypt = require('bcryptjs')
+const xss = require('xss');
+const bcrypt = require('bcryptjs');
 
 // methods to store database transactions
 const UsersService = {
@@ -55,4 +55,4 @@ const UsersService = {
     },
 }
 
-module.exports = UsersService
+module.exports = UsersService;
