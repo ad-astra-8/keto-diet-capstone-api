@@ -23,7 +23,7 @@ const morganOption = (NODE_ENV === 'production')
     ? 'tiny'
     : 'common';
 
-    //app using morgan cors and helmet
+//app using morgan cors and helmet
 app.use(morgan(morganOption));
 app.use(cors());
 app.use(helmet());
